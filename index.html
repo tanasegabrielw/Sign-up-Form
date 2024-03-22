@@ -15,13 +15,15 @@
             </div>
         </div>
         <div class="right-container">
-           <section>
-                   <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h2>
-                   <h2>You <em>know</em> you want to.</h2>
-           </section>
+           <header>
+                   <div>
+                       <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                       <p>You <em>know</em> you want to.</p>
+                   </div>
+           </header>
             <form action="#" method="post">
-                <legend>Let's do this!</legend>
-                <div class="form-inputs">
+                <div class="form-input-container">
+                    <legend>Let's do this!</legend>
                     <div class="row">
                         <div><label for="fname">FIRST NAME</label><input type="text" id="fname" name="fname" required minlength="2"></div>
                         <div><label for="lname">LAST NAME</label><input type="text" id="lname" name="lname" required minlength="2"></div>
@@ -35,8 +37,10 @@
                         <div><label for="cpsw">CONFIRM PASSWORD</label><input type="text" class="error" id="cpsw" name="cpsw"></div>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
-                <div class="log-in">Already have an account? <a href="#">Log in</a></div>
+                <div class="button-container">
+                    <button type="submit">Create Account</button>
+                    <div class="log-in">Already have an account? <a href="#">Log in</a></div>
+                </div>
             </form>
         </div>
 

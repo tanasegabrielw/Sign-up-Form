@@ -1,6 +1,9 @@
 :root{
     --main-color:#596D48;
     --logo-top-padding:15rem;
+    --logo-height:7.5rem;
+    --padding-right-container:10rem;
+    --padding-left-container:2rem;
 }
 @font-face {
     font-family:norse-bold;
@@ -15,6 +18,10 @@ body{
     line-height: 1.2;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+p{
+    margin:0;
+    padding:0;
+}
 
 main{
     min-height: 100vh;
@@ -22,7 +29,7 @@ main{
 }
 
 .left-container{
-    width: max(35%, 350px);
+    width:max(30%,250px) ;
     background-color: var(--main-color);
     background-image:url(assets/background-img.jpg);
     background-repeat: no-repeat;
@@ -40,15 +47,44 @@ main{
     justify-content: center;
     align-items: center;
 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding:0.5rem;
 }
 
 .logo-container img{
-    height: calc(var(--logo-top-padding)/2);
+    height: var(--logo-height)
 }
 
 .logo-container .odin-name{
     font-size:5rem;
     font-family: 'norse-bold',sans-serif;
+}
+
+.right-container{
+    width: 100%;
+    background-color: wheat;
+}
+
+form{
+}
+header{
+    height:23.5rem;    
+}
+
+header p {
+    font-size: 1.3rem; 
+}
+header p:first-child {
+    padding: 10rem 46rem 0rem 3rem;
+}
+header p:nth-child(2){
+    padding: 2rem 46rem 0rem 3rem;
+}
+
+.form-input-container{
+    background-color: white;
+}
+.button-container,
+.form-input-container
+{
+    padding-left:3rem;
 }
