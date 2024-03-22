@@ -81,7 +81,8 @@ header .info {
 }
 .form-input-container{
     background-color: white;
-    min-height: calc(var(--logo-height)*3);
+    min-height: calc(var(--logo-height)*2.5);
+    box-shadow: 0 0 4px gray;
 }
 .button-container,
 .form-input-container,
@@ -90,3 +91,68 @@ header
     padding-left:3rem;
 }
 
+form legend {
+    font-size:1.4rem;
+    font-weight:500;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+label{
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+   
+}
+.row{
+    display: flex;
+    gap:4rem;
+    padding-bottom: 1rem;
+}
+.button-container{
+    padding-top: 2rem;
+}
+.button-container button {
+    border:none;
+    border-radius:0.5rem;
+    padding:1rem 3rem;
+    background-color: #596D48;
+    color:white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 4px gray;
+}
+.button-container button:hover{
+    font-weight: 900;
+    color:antiquewhite;
+}
+.button-container .log-in{
+    font-size: 1rem;
+}
+.button-container .log-in a{
+    text-decoration: none;
+    color:#596D48;
+    font-weight: 800;
+    cursor: pointer;
+}
+.button-container .log-in a:hover{
+    font-weight: 900;
+    color:antiquewhite;
+}
+form input
+{
+    width:12rem;
+    height: 1.2rem;
+    padding:0.2rem 0.6rem;
+    border:1px solid silver;
+    border-radius:0.2rem;
+}
+
+form input:hover,
+form input:focus{
+    outline:none;
+    border:1.5px solid blue;
+    box-shadow: 1px 1px 1px lightgray;
+}
