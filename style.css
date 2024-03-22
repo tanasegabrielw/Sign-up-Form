@@ -1,10 +1,9 @@
 :root{
     --main-color:#596D48;
-    --logo-top-padding:15rem;
-    --logo-height:7.5rem;
-    --padding-right-container:10rem;
-    --padding-left-container:2rem;
+    --logo-top-padding:12rem;
+    --logo-height:calc(var(--logo-top-padding)/2)
 }
+
 @font-face {
     font-family:norse-bold;
     src: url(assets/Norse-Bold.otf);
@@ -51,40 +50,43 @@ main{
 }
 
 .logo-container img{
-    height: var(--logo-height)
+    height: var(--logo-height);
+    width: auto;
 }
 
 .logo-container .odin-name{
-    font-size:5rem;
+    font-size:6rem;
     font-family: 'norse-bold',sans-serif;
+    font-weight: 800;
 }
 
 .right-container{
     width: 100%;
-    background-color: wheat;
+    background-color: silver;
 }
 
-form{
-}
 header{
-    height:23.5rem;    
-}
 
-header p {
-    font-size: 1.3rem; 
-}
-header p:first-child {
-    padding: 10rem 46rem 0rem 3rem;
-}
-header p:nth-child(2){
-    padding: 2rem 46rem 0rem 3rem;
-}
+    padding-top:calc(var(--logo-height)*1.5);
+    padding-bottom: calc(var(--logo-height)*0.6);
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
 
+}
+header .info {
+    margin-right: 50%;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
 .form-input-container{
     background-color: white;
+    min-height: calc(var(--logo-height)*3);
 }
 .button-container,
-.form-input-container
+.form-input-container,
+header
 {
     padding-left:3rem;
 }
+
