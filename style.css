@@ -109,6 +109,7 @@ label{
     gap:4rem;
     padding-bottom: 1rem;
 }
+
 .button-container{
     padding-top: 2rem;
 }
@@ -166,4 +167,18 @@ form input:focus{
 .error{
     outline:none;
     border:1.5px solid red;
+}
+
+.credentials{
+    position:absolute;
+    bottom:0;
+    color:white;
+    background-color: hsla(0, 0%, 0%,0.6);
+    padding:0.2rem;
+    font-size: 0.8rem;
+}
+.credentials a{
+    text-decoration: none;
+    color:#596D48;
+    font-weight: 800;
 }
