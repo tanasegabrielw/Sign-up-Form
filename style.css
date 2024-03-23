@@ -75,7 +75,7 @@ header{
 
 }
 header .info {
-    margin-right: 50%;
+    padding-right: min(50%,45rem);
     font-size: 1.4rem;
     font-weight: 600;
 }
@@ -155,4 +155,15 @@ form input:focus{
     outline:none;
     border:1.5px solid blue;
     box-shadow: 1px 1px 1px lightgray;
+}
+.message{
+    color:red;
+    font-size: 0.8rem;
+    margin-top:0.3rem;
+    font-weight: 400;
+}
+
+.error{
+    outline:none;
+    border:1.5px solid red;
 }
